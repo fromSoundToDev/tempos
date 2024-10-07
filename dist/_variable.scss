@@ -1,0 +1,43 @@
+// variables
+
+$backgroundColor1:#a2d2ff;
+$backgroundColor2:#003049;
+$ternaryTextColor:#003049;
+$mixColor2:#fff;
+$primaryTextFontColor:#f6aa1c;
+$SecondaryTextFontColor:#fff;
+
+
+// functions
+
+@function lightBox($color){
+    $result : 1px solid $color
+    return $result;
+}
+
+@function boldBox($color){
+    $result:2px solid $color
+    return $result;
+}
+
+// light and dark mode template
+
+@function darken-color($backgroundColor2, $amount) {
+    @return darken($backgroundColor2, $amount);
+  }
+@function lighten-color($backgroundColor1, $amount) {
+    @return lighten($backgroundColor1, $amount);
+  }
+
+// mixin
+
+@mixin light-dark-mode($font-color,$backgroundColor){
+    background-color:$backgroundColor;
+    color:$font-color;
+}
+
+
+  
+  
+  
+

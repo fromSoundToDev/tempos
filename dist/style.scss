@@ -1,0 +1,80 @@
+@import './config';
+@import './variable';
+@import './component/card';
+@import './component/header';
+
+
+
+.container{
+    .main{// styling the main
+       
+        width: 100%;
+        
+    
+        .search{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 40px;
+            
+            width: 100%;
+            .country-input{
+                
+                min-width: 200px;
+                height: 30px;
+                border-radius: 19px;
+                border: 1px solid $ternaryTextColor;
+                outline: none;
+                padding: 2px 5px;
+                margin-right: 5px;
+            }// inuput element 
+    
+            .search-icon{
+                width: 30px;
+                border: 1px solid $ternaryTextColor;
+                border-radius: 50%;
+                padding: 2px;
+                background-color: $backgroundColor2;
+    
+               
+                
+            } //search icon element 
+    
+         } //search element
+    
+         .weather-links{
+            display: flex;
+            width: 100%;
+            margin-top: 20px;
+           justify-content: center;
+          
+
+           .weather-link{
+
+               margin: 0 0.7rem;
+               color: $ternaryTextColor;
+               font-weight: bold;
+               &:hover{
+                text-decoration: underline $primaryTextFontColor;
+                color: white;
+               }
+           }
+         } //end weather links
+
+         .advises{
+            display: flex;
+            flex-direction: column;
+            .advise-title{
+                margin:1rem auto;
+            }
+            .advise{
+                font-size: 2rem;
+                padding: 16px;
+                font-weight: 200;
+            }
+
+         }//advise element 
+    
+    
+    }
+}
