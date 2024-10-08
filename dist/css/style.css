@@ -56,6 +56,33 @@ ul > li {
   justify-content: center;
   align-items: center;
 }
+.cards-container .card .humidity-wind {
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.cards-container .card .humidity-wind .humidity {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.cards-container .card .humidity-wind .humidity .humidity-image {
+  width: 30px;
+}
+.cards-container .card .humidity-wind .wind {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.cards-container .card .humidity-wind .wind .wind-image {
+  width: 30px;
+}
 
 .container .navigation {
   display: flex;
